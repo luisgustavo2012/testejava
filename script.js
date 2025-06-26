@@ -2,7 +2,6 @@ alert("Comando para mostrar um texto na tela, posso usar aspas duplas ou aspas s
 alert("Isto é um alerta para poder te alertar sobre um alertaque ira te alertar em seguida a esse alerto");
 alert("ALERTA");
 
-let numero;
 let chute;
 let idade;
 let nome;
