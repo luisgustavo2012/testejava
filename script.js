@@ -5,8 +5,8 @@ alert("ALERTA")
 let numero = 25;
 let chute;
 let idade;
-let nome = console.log(prompt);
+let nome;
 
 console.log (numero);
-console.log(prompt ("Digite seu nome");) 
+console.log(prompt ("Digite seu nome")); 
 
