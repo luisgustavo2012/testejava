@@ -8,5 +8,13 @@ let idade;
 let nome;
 
 console.log (numero);
-console.log(prompt ("Digite seu nome")); 
+console.log(prompt ("Digite seu nome"));
 
+let entrada = prompt("Digite um número inteiro:");
+let numero = parselnt(entrada);
+
+if(Number.isInteger(numero)){
+    console.log("Obrigado! Você digitou um inteiro");
+}else {
+    console.log("Por favor, digite um numero inteiro válido");
+}
