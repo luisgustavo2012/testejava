@@ -1,18 +1,24 @@
-alert("Comando para mostrar um texto na tela, posso usar aspas duplas ou aspas simples, mas siga este padrão em todo codigo");
-alert("Isto é um alerta para poder te alertar sobre um alertaque ira te alertar em seguida a esse alerto");
-alert("ALERTA");
+alert('Seja bem-vindo ao nosso jogo!');
 
-let chute;
-let idade;
-let nome;
+// Gera um número secreto aleatório entre 1 e 10
+let numeroSecreto = 5;
+console.log(numeroSecreto); // (Para testes, pode remover depois)
 
-console.log(prompt ("Digite seu nome"));
+// Variável para armazenar o chute do usuário
+let primeiroNumero = prompt("Digite um número:");
+let segundoNumero = prompt("Digite um número:");
+let terceiroNumero = prompt("Digite um número:");
+let quartoNumero = prompt("Digite um número:");
+let media;
+let mediaTotal;
 
-let entrada = prompt("Digite um número inteiro:");
-let numero = parselnt(entrada);
+media = primeiroNumero + segundoNumero + terceiroNumero + quartoNumero;
+mediaTotal = media /4;
 
-if(Number.isInteger(numero)){
-    console.log("Obrigado! Você digitou um inteiro");
-}else {
-    console.log("Por favor, digite um numero inteiro válido");
-}
+  if (mediaTotal == numeroSecreto) {
+    alert(`Parabéns! Você acertou o número secreto ${numeroSecreto} na tentativa.`);
+  } else if (mediaTotal > numeroSecreto) {
+    alert(`O número secreto é menor que ${mediaTotal}. Tente novamente.`);
+  } else {
+    alert(`O número secreto é maior que ${mediaTotal}. Tente novamente.`);
+  }
